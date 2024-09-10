@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#game-controls {
+  margin-bottom: 20px;
+}
+
+#game-board {
+  display: grid;
+  gap: 1px;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgray;
+  border: 1px solid #888;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.cell.revealed {
+  background-color: white;
+  cursor: default;
+}
+
+.cell.bomb {
+  background-color: red;
+}
+
+#game-over {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 30rem;
+  height: 30rem;
+  color: red;
+  font-family: monospace;
+  font-size: 3.5rem;
+}
+
+#game-win {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 30rem;
+  height: 30rem;
+  color: green;
+  font-family: monospace;
+  font-size: 3.5rem;
+}
